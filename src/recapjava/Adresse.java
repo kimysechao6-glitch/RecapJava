@@ -9,24 +9,24 @@ package recapjava;
  * @author Kimy
  */
 public class Adresse {
-    private String numeroVoie;
+    private String numero;
     private String codePostal;
     private String ville;
     private String pays;
  
     public Adresse(String numeroVoie, String codePostal, String ville, String pays) {
-        this.numeroVoie = numeroVoie;
+        this.numero = numeroVoie;
         this.codePostal = codePostal;
         this.ville = ville;
         this.pays = pays;
     }
  
     public String getNumeroVoie() {
-        return numeroVoie;
+        return numero;
     }
  
     public void setNumeroVoie(String numeroVoie) {
-        this.numeroVoie = numeroVoie;
+        this.numero = numeroVoie;
     }
  
     public String getCodePostal() {
@@ -63,6 +63,6 @@ public class Adresse {
  
     @Override
     public String toString() {
-        return numeroVoie + ", " + codePostal + " " + ville + ", " + pays;
+        return numero + ", " + codePostal + " " + ville + ", " + pays;
     }
 }

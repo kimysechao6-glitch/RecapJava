@@ -23,14 +23,14 @@ public class Colis {
     private int poidsEnGrammes;
     private String nomDestinataire;
     private Adresse adresseDestination;
-    private PointLivraison pointLivraison; // rattachement obligatoire
+    private Pointlivraison pointLivraison; // rattachement obligatoire
  
     /**
      * Construit un colis. Le rattachement à un point de livraison est obligatoire :
      * il est donc exigé dès la construction (pas de colis "orphelin" possible).
      */
     public Colis(int poidsEnGrammes, String nomDestinataire, Adresse adresseDestination,
-                 PointLivraison pointLivraison) {
+                 Pointlivraison pointLivraison) {
         if (pointLivraison == null) {
             throw new IllegalArgumentException("Un colis doit obligatoirement être rattaché à un point de livraison.");
         }
@@ -59,7 +59,7 @@ public class Colis {
         return adresseDestination;
     }
  
-    public PointLivraison getPointLivraison() {
+    public Pointlivraison getPointLivraison() {
         return pointLivraison;
     }
  

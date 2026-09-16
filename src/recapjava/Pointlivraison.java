@@ -13,7 +13,7 @@ public class Pointlivraison {
     private Adresse adresse;
     private List<Colis> colisDeposes;
  
-    public PointLivraison(String enseigne, Adresse adresse) {
+    public Pointlivraison(String enseigne, Adresse adresse) {
         this.enseigne = enseigne;
         this.adresse = adresse;
         this.colisDeposes = new ArrayList<>();
